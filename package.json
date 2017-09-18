@@ -1,0 +1,14 @@
+{
+  "name": "vuejs-playground",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "this is a playground for learning vuejs",
+  "author": "Medhat Dawoud <medhatdawoud@gmail.com>",
+  "scripts": {
+    "start": ""
+  },
+  "dependencies": {
+    "vue": "^2.4.4"
+  },
+  "devDependencies": {}
+}
