@@ -4,21 +4,22 @@
   "description": "this is a playground for learning vuejs",
   "author": "Medhat Dawoud <medhatdawoud@gmail.com>",
   "scripts": {
-    "start": "webpack"
+    "start": "live-server",
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "dependencies": {
-    
+    "vue": "^2.4.4",
+    "vue-loader": "^13.0.5"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
     "babel-preset-latest": "^6.0.0",
     "css-loader": "^0.28.7",
-    "vue": "^2.4.4",
-    "vue-loader": "^13.0.5",
+    "live-server": "^1.2.0",
     "vue-template-compiler": "^2.4.4",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.2.0"
+    "webpack": "^3.6.0"
   },
   "license": "MIT"
 }
