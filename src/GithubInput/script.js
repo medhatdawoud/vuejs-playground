@@ -1,7 +1,11 @@
 import bus from '../bus'
+import GithubOutput from '../GithubOutput/index.vue'
 
 export default {
   name: 'GithubInput',
+  components: {
+    'github-output': GithubOutput
+  },
   data() {
     return {
       username: '',
