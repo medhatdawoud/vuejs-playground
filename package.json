@@ -7,7 +7,7 @@
     "start": "webpack"
   },
   "dependencies": {
-    "axios": "^0.16.2"
+    
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
