@@ -1,5 +1,48 @@
 <div v-if="data">
-  <h4>{{ data.name }}</h4>
-  <p>{{ data.company }}</p>
-  <p>Number of repos: {{ data.public_repos }}</p>
+  <table border="1">
+    <tr v-if="data.name">
+      <td>
+        <b>Name</b>
+      </td>
+      <td>
+        <a target="_blank" :href="data.html_url">{{ data.name }}</a>
+      </td>
+    </tr>
+    <tr v-if="data.email">
+      <td>Email</td>
+      <td>
+        <a target="_blank" :href="`mailto:${data.email}`">{{ data.email }}</a>
+      </td>
+    </tr>
+    <tr v-if="data.avatar_url">
+      <td><b>Avatar</b></td>
+      <td><img class="avatar" alt="Avatar" :src="data.avatar_url" /></td>
+    </tr>
+    <tr v-if="data.company">
+      <td><b>Company</b></td>
+      <td>{{ data.company }}</td>
+    </tr>
+    <tr v-if="data.location">
+      <td><b>Localtion</b></td>
+      <td>{{ data.location }}</td>
+    </tr>
+    <tr v-if="data.public_repos">
+      <td><b>Number of reposatories</b></td>
+      <td>
+        {{ data.public_repos }}
+      </td>
+    </tr>
+    <tr v-if="data.public_gists">
+      <td><b>Number of public gists:</b></td>
+      <td>{{ data.public_gists }}</td>
+    </tr>
+    <tr v-if="data.followers">
+      <td><b>Number of followers:</b></td>
+      <td>{{ data.followers }}</td>
+    </tr>
+    <tr v-if="data.following">
+      <td><b>Number of following:</b></td>
+      <td>{{ data.following }}</td>
+    </tr>
+  </table>
 </div>
